@@ -43,3 +43,54 @@ closeMenu.addEventListener("click", () => {
 const submitFo = () => {
   alert("lol");
 };
+
+let tl = gsap.timeline({ defaults: { ease: "SlowMo.easeOut" } });
+
+tl.to("#lelh1", {
+  y: "0%",
+  duration: 0.7,
+  stagger: 0.2,
+});
+tl.fromTo("#lmaoh1", { opacity: 0 }, { opacity: 1, delay: 0.5 });
+
+
+gsap.to("#myAvImg", {
+  scale: 1.5,
+  duration: 2,
+  delay: 1,
+  borderRadius: "50%",
+  height: "200px",
+});
+
+// gsap.to("#portfolio", {
+//   scrollTrigger: {
+//     trigger: "#portfolio",
+//     scroller: "body",
+//   },
+
+// });
+gsap.to(".imgkk", {
+  scrollTrigger: {
+    trigger: ".imgkk",
+    scroller: "body",
+    start: "top 80%",
+    end: "bottom 10%",
+    scrub: true,
+  },
+  opacity: 0.5,
+  height: "400px",
+  duration: 0.02,
+});
+
+gsap.to(".services-sec1", {
+  scrollTrigger: {
+    trigger: ".services-sec1",
+    scroller: "body",
+    start: "top 80%",
+    end: "bottom 10%",
+    scrub: true,
+  },
+  opacity: 1,
+  flexDirection: "column",
+  duration: 2,
+});

@@ -127,15 +127,16 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 40px;
   /* height: 100%; */
 }
 .myHeroSection .imageSec img {
-  height: 300px;
-  border-radius: 50%;
+  height: 250px;
   margin-bottom: 20px;
 }
 .myHeroSection .imageSec h4 {
   letter-spacing: 3px;
+  margin-top: 50px;
 }
 .myHeroSection .textSec {
   display: flex;
@@ -149,6 +150,12 @@ body {
   font-size: 5rem;
   text-align: center;
   margin-top: 20px;
+  background-color: #161616;
+  overflow: hidden;
+}
+.myHeroSection .textSec h1 span {
+  display: inline-block;
+  transform: translateY(100%);
 }
 .myHeroSection .textSec .btnText {
 }
@@ -179,6 +186,7 @@ body {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  margin-top: 20px;
 }
 
 .btnText:hover,
@@ -266,8 +274,8 @@ body {
   gap: 2rem;
 }
 #secondPage .portfolio .portfolio-sections img {
-  height: 400px;
-  opacity: 0.5;
+  height: 600px;
+  opacity: 0;
   filter: grayscale(100%);
   transition: all 0.5s;
 }
@@ -322,9 +330,12 @@ body {
 #thirdPage .services .services-sec1 {
   display: flex;
   flex-direction: column;
-  left: 100px;
+  left: 90px;
   position: sticky !important;
   top: 100px;
+  opacity: 0;
+  flex-direction: column-reverse;
+  /* bottom: 100px; */
   gap: 1rem;
 }
 
@@ -359,6 +370,7 @@ body {
 }
 #serv-sec2 .serv-sec21 h4 {
   font-size: 1.8rem;
+  margin-bottom: 30px;
 }
 #serv-sec2 .serv-sec21 p {
   font-size: 1.5rem;
@@ -417,7 +429,7 @@ body {
 .containerCont {
   background-color: #161616;
   color: #fff;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -462,6 +474,17 @@ body {
   position: relative;
   width: 700px;
 }
+.containerCont .backLeft {
+  display: flex;
+  margin-top: 10px;
+}
+.containerCont .backLeft a {
+  text-decoration: none;
+  color: #fff;
+}
+.containerCont .backLeft a i {
+  font-size: 20px;
+}
 .containerCont .leftConte .inputConte input:focus {
   background-color: gray;
   border-color: aqua;
@@ -493,7 +516,7 @@ body {
   width: 850px;
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .navbar {
     justify-content: space-between;
     padding: 20px 30px;
@@ -507,9 +530,18 @@ body {
   #main .menuNav h1 {
     font-size: 12rem;
   }
+  .myHeroSection .imageSec h4 {
+    margin-top: 15px;
+  }
+  .myHeroSection .textSec {
+    margin-top: 20px;
+  }
   .myHeroSection .textSec h1 {
     font-size: 2rem;
     margin-bottom: 20px;
+  }
+  .btnText {
+    margin-top: 20px;
   }
   .animateSec i {
     font-size: 30px;
@@ -591,5 +623,297 @@ body {
   }
   .fifthSec h4 {
     font-size: 1.2rem;
+  }
+} */
+/* @media only screen and (max-width: 370px) {
+  #serv-sec2 .serv-sec21 h4 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  #serv-sec2 .serv-sec21 p {
+    font-size: 1.2rem;
+  }
+  .fourthp {
+    height: 15vh;
+  }
+  #secondPage .portfolio .portfolio-sections {
+    padding: 0 20px;
+  }
+  .secondPage {
+    padding: px;
+  }
+  .fourthp .pagetoCont h1 {
+    font-size: 2.5rem;
+  }
+  .fourthp .pagetoCont img {
+    height: 30px;
+  }
+  .fourthp .pagetoCont h1:hover {
+    font-size: 1.7rem;
+  }
+  .fourthp .pagetoCont h1:hover img {
+    height: 20px;
+  }
+  .fifthSec h4 {
+    font-size: 0.7rem;
+  }
+  .fifthSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 100vw;
+  }
+  #main .menuNav h1 {
+    font-size: 7rem;
+  }
+  #main .menuNav ul li a {
+    font-size: 2rem;
+  }
+} */
+
+@media only screen and (max-width: 1340px) {
+  #thirdPage {
+    flex-direction: column;
+    padding-top: 150px;
+  }
+  #thirdPage .services {
+    flex-direction: column;
+    position: relative;
+    padding: 10px;
+    flex-direction: column;
+    padding: 10px;
+  }
+  #thirdPage .services .services-sec1 {
+    position: relative !important;
+    top: 50px;
+    flex-direction: column;
+    padding: 10px;
+  }
+  #serv-sec2 .serv-sec21 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+  }
+  #thirdPage .services #serv-sec2 .servme {
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    align-items: center;
+  }
+  .fourthp .pagetoCont h1 {
+    font-size: 7rem;
+    padding-top: 50px;
+  }
+  .fourthp .pagetoCont img {
+    height: 80px;
+  }
+  .fifthSec h4 {
+    font-size: 1.3rem;
+  }
+  .containerCont {
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100vw;
+  }
+  .containerCont .leftConte {
+    padding-left: 0;
+    gap: 2rem;
+    width: 100%;
+    padding: 50px;
+  }
+  .containerCont .leftConte .inputBtn1 {
+    width: 100px;
+    padding: 10px;
+  }
+  .containerCont .leftConte .inputConte input {
+    width: 100%;
+  }
+  .rightConte img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 722px) {
+  #thirdPage .services {
+    padding: 0;
+  }
+  .fourthp .pagetoCont h1 {
+    font-size: 5rem;
+  }
+  .fourthp .pagetoCont h1:hover {
+    font-size: 3rem;
+  }
+  .fourthp {
+    height: 36vh;
+  }
+  .fifthSec {
+    height: 5vh;
+  }
+  .fourthp .pagetoCont img {
+    height: 60px;
+  }
+
+  .fourthp .pagetoCont h1:hover img {
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 20px 30px;
+  }
+  #main .menuNav ul li a {
+    font-size: 6rem;
+  }
+  #main .menuNav ul li a:hover {
+    font-size: 3rem;
+  }
+  #main .menuNav h1 {
+    font-size: 12rem;
+  }
+  .myHeroSection .imageSec h4 {
+    margin-top: 15px;
+  }
+  .myHeroSection .textSec {
+    margin-top: 20px;
+  }
+  .myHeroSection .textSec h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .btnText {
+    margin-top: 20px;
+  }
+  .animateSec i {
+    font-size: 30px;
+  }
+  .animateSecTwoImg {
+    animation: move 10s infinite;
+    gap: 3rem;
+  }
+  @keyframes move {
+    0% {
+      transform: translate(700px);
+    }
+    100% {
+      transform: translate(-700px);
+    }
+  }
+  .animateSec .boxes1,
+  .boxes2 {
+    width: 0;
+  }
+  #secondPage .portfolio h2 {
+    font-size: 60px;
+  }
+  #secondPage .portfolio .portfolio-sections .port-img1,
+  .port-img3 {
+    flex-direction: column;
+  }
+  #secondPage .portfolio .portfolio-sections .port-img5 {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #thirdPage {
+    flex-direction: column;
+    padding-top: 150px;
+  }
+  #thirdPage .services {
+    flex-direction: column;
+    position: relative;
+    padding: 10px;
+    flex-direction: column;
+  }
+  #thirdPage .services .services-sec1 {
+    position: relative !important;
+    top: 50px;
+    flex-direction: column;
+    left: 0;
+  }
+  #serv-sec2 .serv-sec21 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+  }
+  #thirdPage .services #serv-sec2 .servme {
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    align-items: center;
+  }
+  .fourthp {
+    height: 25vh;
+  }
+  .fourthp .pagetoCont h1 {
+    font-size: 5rem;
+  }
+  .fourthp .pagetoCont img {
+    height: 60px;
+  }
+  .fourthp .pagetoCont h1:hover {
+    font-size: 3rem;
+  }
+  .fourthp .pagetoCont h1:hover img {
+    height: 40px;
+  }
+  .fifthSec {
+    height: 5vh;
+  }
+  .fifthSec h4 {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 370px) {
+  #serv-sec2 .serv-sec21 h4 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  #serv-sec2 .serv-sec21 p {
+    font-size: 1.2rem;
+  }
+  .fourthp {
+    height: 15vh;
+  }
+  #secondPage .portfolio .portfolio-sections {
+    padding: 0 20px;
+  }
+  .secondPage {
+    padding: px;
+  }
+  .fourthp .pagetoCont h1 {
+    font-size: 2.5rem;
+  }
+  .fourthp .pagetoCont img {
+    height: 30px;
+  }
+  .fourthp .pagetoCont h1:hover {
+    font-size: 1.7rem;
+  }
+  .fourthp .pagetoCont h1:hover img {
+    height: 20px;
+  }
+  .fifthSec h4 {
+    font-size: 0.7rem;
+  }
+  .fifthSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+  }
+  #main .menuNav h1 {
+    font-size: 7rem;
+  }
+  #main .menuNav ul li a {
+    font-size: 5rem;
   }
 }

@@ -92,5 +92,5 @@ gsap.to(".services-sec1", {
   },
   opacity: 1,
   flexDirection: "column",
-  duration: 2,
+  duration: .2,
 });
